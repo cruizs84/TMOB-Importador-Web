@@ -52,7 +52,7 @@ COMPANY_MAP = {
     "TRAM BAIX": "10225",
     "SOLER I SAURET": "10226",
     "SOC Mobilitat": "10227",
-    "FUJITSU": "10228",
+    "Fujitsu": "10228",
     "LAC": "10229",
     "INDRA": "10230",
     "TUSGSAL": "10231",
