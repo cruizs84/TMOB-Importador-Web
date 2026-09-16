@@ -67,7 +67,7 @@ COMPANY_MAP = {
     "TUS, S. Coop. CL (Sabadell)": "10240",
     "AVANZA": "10241",
     "TMESA": "10242",
-    "SMARTING": "10243",
+    "Smarting": "10243",
     "Cintoi Bus, SL": "10244",
     "EMPRESA PLANA, S.L.": "10245",
     "MASATS": "10246",
