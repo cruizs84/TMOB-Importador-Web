@@ -46,7 +46,7 @@ COMPANY_MAP = {
     "ATM": "10221",
     "FGC": "10222",
     "RENFE": "10223",
-    "TMB Sistemas Distribuïts": "10224",
+    "TMB Sistemes Distribuïts": "10224",
     "TRAM Baix": "10225",
     "TRAM BAIX": "10225",
     "TRAM BAIX": "10225",
