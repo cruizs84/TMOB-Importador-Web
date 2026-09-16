@@ -19,11 +19,6 @@ PROJECT_KEY = "TMOB"
 ISSUE_TYPE_NAME = "Incidencia"
 TIMEZONE = ZoneInfo("Europe/Madrid")
 
-JIRA_API_BASE = "/rest/api/3"
-PROJECT_KEY = "TMOB"
-ISSUE_TYPE_NAME = "Petición"
-TIMEZONE = ZoneInfo("Europe/Madrid")
-
 # Grupo externo resolutor:
 # Las claves son los valores del Excel. Los valores son los IDs
 # reales de las opciones de Jira. NO se usa el texto directamente.
@@ -130,9 +125,7 @@ PRIORITY_MAP = {
 
 REQUIRED_COLUMNS = [
     "ID de la incidencia*+",
-    "ID de orden de trabajo+",
     "ID de petición de servicio",
-    "ID de petición asociada",
     "Empresa*+",
     "Prioridad*",
     "Fecha de envío",
