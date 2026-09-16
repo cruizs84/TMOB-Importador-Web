@@ -130,7 +130,7 @@ PRIORITY_MAP = {
 
 REQUIRED_COLUMNS = [
     "ID de la incidencia*+",
-    "ID de orden de trabajo+,
+    "ID de orden de trabajo+",
     "ID de petición de servicio",
     "ID de petición asociada",
     "Empresa*+",
