@@ -447,11 +447,12 @@ def create_issue(v, config):
     # REQ:
     # Incidencia -> customfield_10296
     # Petición / WO -> customfield_10505
+    
     if config["issue_type_id"] == "10224":
         fields["customfield_10505"] = v["req"]
     else:
         fields["customfield_10296"] = v["req"]
-    }
+    
 
     if v["company_id"]:
         fields["customfield_10369"] = {"id": v["company_id"]}
