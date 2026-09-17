@@ -41,14 +41,14 @@ with col1:
     st.write("Importador estable de incidencias históricas/activas.")
     st.write("Tipo Jira: **Incidencia**")
     if st.button("Abrir Incidencias", type="primary", use_container_width=True):
-        st.switch_page("pages/01_Incidencias.py")
+        st.switch_page("01_Incidencias.py")
 
 with col2:
     st.markdown("## 📦 Peticiones / WO")
     st.write("Importador de órdenes de trabajo.")
     st.write("Tipo Jira: **Tarea por incidencia o petición**")
     if st.button("Abrir Peticiones / WO", type="primary", use_container_width=True):
-        st.switch_page("pages/02_Peticiones_WO.py")
+        st.switch_page("02_Peticiones_WO.py")
 
 st.divider()
 
