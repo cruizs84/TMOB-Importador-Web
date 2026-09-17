@@ -437,14 +437,20 @@ def create_issue(v, config):
         # Ámbito = Pendiente de asignación.
         "customfield_10295": {"id": "10372"},
 
-        # REQ incidencia.
-        "customfield_10296": v["req"],
-
         # ID de incidencia origen. Para WO contiene el ID WO.
         "customfield_10402": v["source_id"],
 
         # Fecha y hora de inicio.
         "customfield_10472": v["start_iso"],
+    }
+
+    # REQ:
+    # Incidencia -> customfield_10296
+    # Petición / WO -> customfield_10505
+    if config["issue_type_id"] == "10224":
+        fields["customfield_10505"] = v["req"]
+    else:
+        fields["customfield_10296"] = v["req"]
     }
 
     if v["company_id"]:
