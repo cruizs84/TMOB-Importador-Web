@@ -1,32 +1,38 @@
-# TMOB Jira Importador Web
+# TMOB – Importador Web
 
-Aplicación Streamlit para importar `INC Activas.xlsx` a Jira Cloud TMOB.
+## Estructura
 
-## Comportamiento
-
-- Comprueba `ID incidencia origen` antes de crear.
-- Si existe: `OMITIDA`.
-- Si no existe: crea `Incidencia`.
-- Toda incidencia nueva se crea en `CREADA`.
-- `Ámbito` se establece en `Pendiente de asignación`.
-- `Persona asignada` queda vacía.
-- `Status_Reason_Hidden` se copia a `Motivo de Pendiente`.
-- No se asignan Ámbito operativo ni técnico automáticamente.
-- Prueba por defecto: 5 incidencias.
-
-## Requisito en Jira
-
-Debe existir la opción de Ámbito:
-
-`Pendiente de asignación`
+- `app_tmob_streamlit.py` → pantalla principal
+- `pages/01_Incidencias.py` → importador de Incidencias
+- `pages/02_Peticiones_WO.py` → importador de Peticiones/WO
+- `app_tmob_streamlit_estable_corregida.py` → lógica estable de Incidencias
+- `app_tmob_streamlit_peticiones.py` → lógica de Peticiones/WO
 
 ## Ejecución local
 
 ```bash
-pip install -r requirements.txt
-streamlit run streamlit_app.py
+streamlit run app_tmob_streamlit.py
 ```
 
-## Despliegue web
+## Secrets
 
-Se puede desplegar en Streamlit Community Cloud desde un repositorio GitHub.
+Mantener los mismos secrets que ya utiliza el importador:
+
+```toml
+TMOB_ACCESS_CODE = "..."
+JIRA_URL = "https://suport-secom.atlassian.net"
+JIRA_EMAIL = "..."
+JIRA_API_TOKEN = "..."
+```
+
+No introducir credenciales en los archivos Python.
+
+## Uso
+
+1. Entrar en la aplicación.
+2. Introducir el código de acceso.
+3. Elegir `Incidencias` o `Peticiones / WO`.
+4. Trabajar con el módulo seleccionado.
+5. Volver al menú mediante la navegación de Streamlit.
+
+Los módulos permanecen separados para que los cambios de uno no alteren la lógica del otro.
