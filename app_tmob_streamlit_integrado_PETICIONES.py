@@ -358,7 +358,7 @@ def validate_row(row, config):
     source_id = clean_text(row[config["id_column"]])
     req = clean_text(row[config["req_column"]])
     company_raw = clean_text(row["Empresa*+"])
-    priority_raw = clean_text(row["Prioridad"])
+    priority_raw = clean_text(row["Prioridad*"])
     summary = clean_text(row["Resumen*"])
 
     errors = []
