@@ -200,7 +200,7 @@ WO_CONFIG = {
     # CORRECCIÓN BUG 1: el Excel WO tiene "Prioridad" sin asterisco
     "priority_column": "Prioridad",
     "valid_id_regex": r"^WO\d+$",
-    "header_row": 1,
+    "header_row": 0,
     "caption": "Importación controlada de WO tratadas como Peticiones en Jira Cloud.",
     "required_columns": [
         "ID de orden de trabajo+",
